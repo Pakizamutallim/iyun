@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
+</head>
+
+<body>
+    <div class="menu-clicked">
+        <button class="btn btn-x"><i class="las la-times"></i></button>
+        <ul class="pos-menu">
+            <li class="list-unstyled">Home</li>
+            <li class="list-unstyled">Domain</li>
+            <li class="list-unstyled">Hosting</li>
+            <li class="list-unstyled">Blog</li>
+            <li class="list-unstyled">Contact</li>
+        </ul>
+    </div>
+
+    <div class="head justify-content-around d-flex">
+        <div class="logo d-flex"><i class="las la-book"></i>
+            <h2>Server</h2>
+        </div>
+        <div class="d-flex">
+            <div class="modal-dialog-centered mx-5">
+                <div class="logo"><i class="las la-headphones"></i></div>
+                <div class="contact">
+                    <p>7/24 support</p>
+                    <span>1-300-483-7627</span>
+                </div>
+            </div>
+            <div class="modal-dialog-centered mx-5">
+                <div class="logo"><i class="lar la-envelope"></i></div>
+                <div class="contact">
+                    <p>7/24 support</p>
+                    <span>1-300-483-7627</span>
+                </div>
+            </div>
+            <div class="modal-dialog-centered mx-5">
+                <div class="logo"><i class="lab la-rocketchat"></i></div>
+                <div class="contact">
+                    <p>7/24 support</p>
+                    <span>1-300-483-7627</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="d-flex">
+            <div class="logo logo-menu"><i class="las la-bars"></i></div>
+            <ul class="navbar mx-5">
+                <li class="list-unstyled">Home</li>
+                <li class="list-unstyled">Domain</li>
+                <li class="list-unstyled">Hosting</li>
+                <li class="list-unstyled">Blog</li>
+                <li class="list-unstyled">Contact</li>
+            </ul>
+
+            <div class="buttons d-flex ">
+                <button class="btn register btn-outline-success"><a href="">Register</a></button>
+                <button class="btn login btn-success"><a href="">Log In</a></button>
+            </div>
+        </nav>
+        <h1>Register / Sign in</h1>
+        <div class="to-home">
+            <button class="btn"><a href="./index.html">Home</a></button>
+            <span> // Domain </span>
+        </div>
+    </header>
+    <section class="registration">
+        <div class="item-r register">
+            <div class="container my-4">
+                <div class="item">
+                    <h1>Register</h1>
+                </div>
+                <div class="item">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="item">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="item">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="item">
+                    <label for="repassword" class="form-label">Re-type Password</label>
+                    <input type="password" class="form-control" id="repassword">
+                </div>
+                <button class="my-4 btn btn-primary">Register</button>
+            </div>
+        </div>
+        <div class="item-r sign-in">
+            <div class="container my-4">
+                <div class="item">
+                    <h1>Sign in</h1>
+                </div>
+                <div class="item">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="item">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="remember">
+                    <label for="remember" class="form-label">Remember me</label>
+                </div>
+                <div class="item">
+                    <span>No account yet <button class="btn"><a href="">Register</a></button>. Forget password? <button class="btn"><a href="">click here</a></button></span>
+                </div>
+                <button class="my-4 btn btn-primary">Login</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/register.js"></script>
+</body>
+
+</html>

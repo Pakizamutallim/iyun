@@ -1,0 +1,254 @@
+@import "./partials/variables"; 
+// body{
+//     position: relative;
+// }
+.menu-clicked{
+    height: 100vh;
+    width: 30%;
+    background-color: aquamarine; 
+    position: absolute;
+    z-index: 2;
+    display: none;
+    .btn-x{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+       justify-content: flex-end;
+
+       .i{
+        width: 10%;
+        height: 20px;
+       }
+
+    }
+    ul{
+        li{
+            font-size: 30px;
+            padding: 8%;
+        }
+    }
+}
+
+
+.head{
+    align-items: center;
+    .logo{
+        font-size: 50px;
+    }
+    .contact{
+        display: block;
+        p, span{
+            font-size: 18px;
+        }
+    }
+}
+header {
+    nav{
+        background-color: rgb(29, 28, 28);
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+
+        ul{
+            // display: none;
+            width: 50%;
+            li{
+                display: block;
+                color: white;
+                margin: 0 2%;
+            }
+        }
+        .logo-menu{
+            color: $color-white;
+            font-size: 35px;
+            width: 15px;
+            height: 15px;
+            margin-left: 15%;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+                .logo-menu{
+                    display: block;
+                }
+                ul{
+                    li{
+                        display: none;
+                    }
+                }
+            
+        }
+
+        .buttons{
+            width: 50%;
+            justify-content: flex-end;
+            .login{
+                background-color: $color-green;
+            }
+            .register:hover{
+                background-color: $color-green;
+            }
+            button{
+                border-color: $color-green;
+                margin-right: 4%;
+                a{
+                    text-decoration: none;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    
+    .item{
+        background-image: url('https://preview.colorlib.com/theme/server/images/hero_bg_1.jpg.webp');
+        height: 100vh; 
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .item1{
+        background-image: url('https://preview.colorlib.com/theme/server/images/hero_bg_2.jpg.webp');
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 80vh;
+        h1{
+            color: $color-white;
+            font-size: 50px;
+        }
+        .download{
+            background-color: $color-green;
+        }
+        .get-in{
+            border-color: $color-white;
+            transition: .25s;
+        }
+        .get-in:hover{
+            background-color: $color-white; 
+            transition: .25s;
+        }
+        .get-in:hover a{
+            color: black !important;
+        }
+
+        .buttons{
+            margin-left: 40%;
+        }
+
+        button{
+            border-color: $color-green;
+            margin-right: 2%;
+            // width: 10%;
+            a{
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
+    }
+}
+.hosting{
+    margin-top: 15%;
+    h1{
+        text-align: center;
+        margin-bottom: 6%;
+        padding-top: 10%;
+    }
+    .container{
+        .card{
+            text-align: center;
+            i{
+                font-size: 70px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.clients{
+    height: 90vh;
+    margin-top: 5%;
+    background-image: url('https://preview.colorlib.com/theme/server/images/hero_bg_3.jpg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    div {
+        margin-left: 10%;
+        padding-top: 15%;
+        width: 40%;
+        button{
+            border-color: $color-green;
+            background-color: $color-green;
+            padding: 3%;
+            a{
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
+    }
+}
+.why-choose{
+    margin-top: 10%;
+    .container{
+        .card{
+            border: solid 1px;
+            border-color: rgb(197, 193, 193);
+            text-align: center;
+            .logo-and-text{
+                align-items: center;
+                i{
+                    font-size: 70px;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .head{
+        .logo{
+            font-size: 34px; 
+        }
+        .contact{
+            p{
+                font-size: 13px;
+            }
+            span{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .head{
+        .contact{
+            display: none;
+        }
+    }
+    
+}
+
+@media (max-width: 500px) {
+}

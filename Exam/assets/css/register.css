@@ -1,0 +1,42 @@
+header{
+    background-image: url('https://preview.colorlib.com/theme/server/images/hero_bg_1.jpg.webp');
+    height:30vh;
+}
+
+header .to-home{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+header h1{
+    text-align: center;
+    margin-top: 2%
+}
+
+header .to-home button a {
+    text-decoration: none; 
+    font-size: 20px; 
+    color: rgb(98, 211, 98);
+}
+ 
+.registration{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    height: 80vh;
+}
+
+.registration .item-r{
+    margin: 3% 2% 3% 2%;
+    padding: 2%;
+    /* padding: 2%; */
+    /* border: solid 1px; */
+    width: 30%;
+    background-color: white; 
+}
+
+.item-r .item h1{
+    margin: 10% 0;
+}
